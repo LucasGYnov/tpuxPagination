@@ -1,0 +1,101 @@
+/* Palette de couleurs */
+:root {
+    --primary-color: #89A8B2;
+    --secondary-color: #B3C8CF;
+    --background-color: #E5E1DA;
+    --accent-color: #F1F0E8;
+    --text-color: #333;
+    --like-color: #ff5a5f;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--accent-color) !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.filter-section {
+    background-color: var(--accent-color);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    transition: transform 0.3s;
+}
+
+.product-card img:hover {
+    transform: scale(1.05);
+}
+
+.product-card {
+    border: none;
+    background-color: var(--accent-color);
+    transition: box-shadow 0.3s;
+    position: relative;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.like-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.like-btn.liked {
+    color: var(--like-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 20px 0;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+.pagination .page-link {
+    color: var(--secondary-color);
+    transition: background-color 0.3s;
+}
+
+.pagination .page-link:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
